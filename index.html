@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Sansita+One" />
          <style>
             * { 
@@ -75,7 +76,7 @@
                 background: linear-gradient(#081A2C,#492240,#8B1A45);
                 display: flex;
                 align-items: center;
-                justify-content: flex-start;
+                justify-content: flex-start;    
             }
             .info {
                 display: flex;
@@ -86,7 +87,7 @@
                 justify-content:flex-end;
                 white-space: nowrap;
                 padding: 5em;
-            }
+            } 
             #slogan1 {
                 position: static;
                 font-family: "Roboto";
@@ -94,7 +95,7 @@
                 font-size: 56px;
                 color: white;
                 margin: 25px;
-            }
+            }   
             #slogan2 {
                 position: static;
                 font-family: Rokkitt;
@@ -128,7 +129,7 @@
             }
             .headphonepng > img {
                 width: 100%;
-            }
+            }          
             .icons {
                 display: flex;
                 flex-direction: column;
@@ -138,6 +139,79 @@
             }
             #login {
                 margin-bottom: 20px;
+            }
+            @media screen and (max-width: 1200px) {
+                .info {
+                    padding: 0%;
+                }
+                #slogan1 {
+                    font-size: 48px;
+                }
+                #slogan2 {
+                    font-size: 45px;
+                }
+            }
+            @media screen and (max-width: 900px){
+                #slogan1 {
+                    font-size: 40px;
+                }
+                #slogan2 {
+                    font-size: 38px;
+                }
+            }
+            @media screen and (max-width: 720px) {
+                .homebackground {
+                    flex-direction: column;
+                    height: auto;
+                    min-height: calc(100% - 72px);
+                }
+                .headphonepng {
+                    width: 70%;
+                    margin-top: 1em;
+                }
+                #slogan1 {
+                    font-size: 30px;
+                    margin: 7px;
+                }
+                #slogan2 {
+                    font-size: 28px;
+                    margin-bottom: 20px;
+                }
+                #startbutton {
+                    font-size: 25px;
+                    width: 80%;
+                    height: 50px;
+                    margin-bottom: 2em;
+                }
+                .icons {
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                .headphonepng {
+                    width: 80%;
+                }
+            }
+            @media screen and (max-width: 400px) {
+                .headphonepng {
+                    margin-bottom: 1em;
+                    margin-top: 5em;
+                }
+            }
+            @media screen and (max-width: 320px) {
+                #slogan1 {
+                    font-size: 26px;
+                }
+                #slogan2 {
+                    font-size: 24px;
+                }
+                .headphonepng {
+                    margin-top: 1em;
+                }
+                #startbutton {
+                    font-size: 22px;
+                    height: 40px;
+                }
             }
          </style>   
     </head>
