@@ -19,6 +19,38 @@
                 align-items: center;
                 justify-content:flex-end;
              }
+            .nav1 {
+                padding: 20px;
+                position: relative;
+                display: inline-block;
+            }
+            .dropdown-content1 {
+                border-radius: 8px;
+                padding: 20px 24px;
+                display: none;
+                background-color: #121212;
+                position: absolute;
+                min-width: 246px;
+                box-shadow:0px 0px 10px 1px rgba(255, 255, 255, 0.3) ;
+                z-index: 1;
+            }
+            .dropdown-content1 a {
+                font-size: 18px;
+                font-family: 'Source Sans Pro', sans-serif;
+                line-height: 190.69%;
+                color: #FFFFFF;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+            .dropdown1:hover .dropdown-content1 {
+                display: block;
+            }
+            .dropdown1:hover .nav1 {
+                color: #5EA2E2;
+            }
+            .dropdown-content1 a:hover {color: #5EA2E2;}
+            
             #logo {
                 list-style-type: none;
                 display: flex;
@@ -52,6 +84,7 @@
                 padding-left: 5px;
             }
             .nav1 {
+                background-color: #121212;
                 color: white;
                 font-family: "Roboto";
                 font-style: normal;
@@ -59,11 +92,11 @@
                 font-size: 24px;
                 text-decoration: none;
                 white-space: nowrap;
-                margin-right: 2em;
                 flex-wrap: nowrap;
              }
             .nav1:hover {
                 color: #5EA2E2;
+                cursor: pointer;
              }
             .navbar {
                 display: flex;
@@ -122,6 +155,7 @@
                 justify-content: center;
                 align-items: center;
                 padding: 10px 20px; 
+                cursor: pointer;
             }
             #startbutton:hover {
                 color:#5EA2E2;
@@ -201,7 +235,6 @@
                 }
                 .nav1 {
                     font-size: 22px;
-                    margin-right: 1em;
                 }
             }   
             @media screen and (max-width: 400px) {
@@ -235,7 +268,6 @@
                 }
                 .nav1 {
                     font-size: 18px;
-                    margin-right: 10px;
                 }
             }
          </style>   
@@ -246,7 +278,14 @@
                 <li><a href="home" class="home">AHEAD</a></li>
             </ul>
             <ul id="nav">
-                <li><a href="#new" class="nav1">新品</a></li>
+                <li class="dropdown1">
+                    <a href="javascript:void(0)" class="nav1">新品</a>
+                    <div class="dropdown-content1">
+                        <a href="#">SteelSeries Arctis 7</a>
+                        <a href="#">SteelSeries Arctis Pro</a>
+                        <a href="#">Immerse Gh50</a>
+                    </div>
+                </li>
                 <li><a href="#classic" class="nav1">經典</a></li>
                 <li><a href="#products" class="nav1">產品</a></li>
                 <li class="searching"><input type="text" placeholder="請輸入商品名稱" onfocus="this.placeholder=''" onblur="this.placeholder='請輸入商品名稱'"></li>
